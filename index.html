@@ -20,16 +20,16 @@
 
     
         <a class="logo" href="./index.html">
-            <span class="part-logo">Web</span>Studio
+            <span class="logo__part">Web</span>Studio
         </a>
 
 <!-- Навигация -->
 
         <nav class="nav">
-            <ul class="nav-list">
-                <li class="nav-item"><a class="nav-link current" href="./index.html">Студия</a></li>
-                <li class="nav-item"><a class="nav-link" href="./portfolio.html">Портфолио</a></li>
-                <li class="nav-item"><a class="nav-link" href="">Контакты</a></li>
+            <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link nav__link--current" href="./index.html">Студия</a></li>
+                <li class="nav__item"><a class="nav__link" href="./portfolio.html">Портфолио</a></li>
+                <li class="nav__item"><a class="nav__link" href="">Контакты</a></li>
             </ul>
         </nav>
 
@@ -37,16 +37,16 @@
 <!-- Контакты -->
 
 <ul class="contact">
-    <li class="contact-item">
-        <a class="contact-link link" href="mailto:info@devstudio.com">
-         <svg class="contact-icon" width="16px" height="12px">
+    <li class="contact__item">
+        <a class="contact__link link" href="mailto:info@devstudio.com">
+         <svg class="contact__icon" width="16px" height="12px">
              <use href="./images/icons.svg#icon-envelope"></use>
          </svg>info@devstudio.com
         </a>
     </li>
-    <li class="contact-item">
-        <a class="contact-link link" href="tel:0961111111">
-        <svg class="contact-icon" width="10px" height="16px">
+    <li class="contact__item">
+        <a class="contact__link link" href="tel:0961111111">
+        <svg class="contact__icon" width="10px" height="16px">
             <use href="./images/icons.svg#icon-phone1"></use>
         </svg>096 111 11 11
         </a>
@@ -63,28 +63,28 @@
       
         <section class="hero">
             <div class="container">
-            <h1 class="hero-text">Эффективные решения для вашего бизнеса</h1>
-            <button class="hero-button" type="button" data-modal-open>Заказать услугу</button>
+            <h1 class="hero__text">Эффективные решения для вашего бизнеса</h1>
+            <button class="button__main" type="button" data-modal-open>Заказать услугу</button>
             </div>
             <div class="backdrop is-hidden" data-modal>
                 
-                <div class="modal-wrapper">
+                <div class="modal">
                    
                      
                       
-                    <button class="modal-btn" data-modal-close> 
-                        <svg class="modal-close" width="11" height="11">
+                    <button class="modal__btn" data-modal-close> 
+                        <svg class="modal__btn--close" width="11" height="11">
                             <use href="./images/icons.svg#icon-Vector-8"></use>
                         </svg>
                     </button>
                     
-                    <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+                    <p class="modal__title">Оставьте свои данные, мы вам перезвоним</p>
                     <form class="modal-form">
-                        <div class="modal-field">
-                            <label class="modal-label" for="name">Имя</label>
-                            <div class="modal-container">
-                                <input class="modal-input" type="text" name="name" id="name" />
-                                <svg class="modal-icon" width="12" height="12">
+                        <div class="modal-form__field">
+                            <label class="modal-form__label" for="name">Имя</label>
+                            <div class="modal-form__container">
+                                <input class="modal-container__input" type="text" name="name" id="name" />
+                                <svg class="modal-container__icon" width="12" height="12">
                                     <use href="./images/icons.svg#icon-people"></use>
                                 </svg>
                             </div>
@@ -94,48 +94,48 @@
                            
                         </div>
                     
-                        <div class="modal-field">
-                            <label class="modal-label" for="tel">Телефон</label>
-                            <div class="modal-container">
-                                <input class="modal-input" type="tel" name="tel" id="tel" />
-                                <svg class="modal-icon" width="13" height="13">
+                        <div class="modal-form__field">
+                            <label class="modal-form__label" for="tel">Телефон</label>
+                            <div class="modal-form__container">
+                                <input class="modal-form__input" type="tel" name="tel" id="tel" />
+                                <svg class="modal-form__icon" width="13" height="13">
                                     <use href="./images/icons.svg#icon-tel"></use>
                                 </svg>
                             </div>
                             
                         </div>
                     
-                        <div class="modal-field">
-                            <label class="modal-label" for="mail">Почта</label>
-                            <div class="modal-container">
-                                <input class="modal-input" type="email" name="mail" id="mail" />
-                                <svg class="modal-icon" width="15" height="12">
+                        <div class="modal-form__field">
+                            <label class="modal-form__label" for="mail">Почта</label>
+                            <div class="modal-form__container">
+                                <input class="modal-form__input" type="email" name="mail" id="mail" />
+                                <svg class="modal-form__icon" width="15" height="12">
                                     <use href="./images/icons.svg#icon-mail"></use>
                                 </svg>
                             </div>
                            
                         </div>
                     
-                        <div class="textarea-field">
-                            <label class="modal-label" for="textarea">Комментарий</label>
-                            <textarea class="textarea" name="comment" id="textarea" placeholder="Введите текст"></textarea>
+                        <div class="textarea">
+                            <label class="modal-form__label" for="textarea">Комментарий</label>
+                            <textarea class="textarea__field" name="comment" id="textarea" placeholder="Введите текст"></textarea>
                         </div>
                     
                         <div class="modal-policy">
-                            <label class="policy" for="policy">
-                                <input class="policy-input" type="checkbox" name="policy" id="policy" />
-                                <span class="policy-check">
+                            <label class="modal-policy__label" for="policy">
+                                <input class="modal-policy__input" type="checkbox" name="policy" id="policy" />
+                                <span class="modal-policy__check">
                                     <svg width="11" height="8">
                                         <use href="./images/icons.svg#icon-icon-check"></use>
                                     </svg>
                                 </span>
                              
-                                <span class="policy-text">Соглашаюсь с рассылкой и принимаю
-                                    <a class="agreement" href="">Условия договора</a></span>
+                                <span class="modal-policy__text">Соглашаюсь с рассылкой и принимаю
+                                    <a class="modal-policy__agreement" href="">Условия договора</a></span>
                             </label>
                         </div>
                     
-                        <button class="modal-submit" type="submit">Отправить</button>
+                        <button class="modal__submit" type="submit">Отправить</button>
                     </form>
                     
                 </div>
@@ -505,8 +505,9 @@
     <footer  class="footer">
         <div class="container-footer container">
         <div class="container-footer-address">
-        <a class="logo-footer" href="./index.html">
-            <span class="part-logo">Web</span><span class="studio-logo">Studio</span>
+        <a class="logo footer__logo" href="./index.html">
+            <span class="logo__part">Web</span>Studio
+            <!-- <span class="studio-logo">Studio</span> -->
         </a>
 
         <address>
