@@ -512,9 +512,6 @@ transition: background-color var(--animation);
 
 }
 
-.item-foto {
-    /* padding-bottom: 20px; */
-}
 
 .example-photo {
     display: flex;
@@ -1176,7 +1173,7 @@ background: var(--background-main-btn);
     margin: 0;
     padding: 15px;
     color: rgba(255, 255, 255, 0.3);
-    transition: border var(--animation); color var
+    transition: border var(--animation); color: rgba(255, 255, 255, 0.5);
         
 }
 
@@ -1207,7 +1204,7 @@ background: var(--background-main-btn);
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 
-    transition: color var(--animation);
+    transition: color var(--animation); 
 }
 
 .newsletter__form:hover,
