@@ -1,5 +1,5 @@
 .contact__item {
-    color: var(--secondary-color);
+    color: $secondary-color;
     font-weight: $font-weight-500;
     font-size: $font-size-14;
     text-decoration: none;
@@ -7,23 +7,23 @@
     letter-spacing: 0.02em;
 
     &:hover,
-      :focus {
-            fill: var(--accent-color);
-            transition: fill var(--animation);
+    &:focus {
+            fill: $accent-color;
+            transition: fill $animation;
 
 }
-
-
+}
 
 .contact__icon {
     margin-right: 10px;
     fill: currentColor;
 
     &:hover,
-     :focus {
-            color: var(--accent-color);
-            transition: color var(--animation);
+    &:focus {
+            color: $accent-color;
+            transition: color $animation;
 
+}
 }
 
 
@@ -45,11 +45,12 @@
     padding-bottom: 32px;
 
     &:hover,
-     :focus {
-            color: var(--accent-color);
+    &:focus {
+            color: $accent-color;
 }
 
 
-.contact .item+.item {
+.contact .item + .item {
     margin-left: 50px;
+}
 }
