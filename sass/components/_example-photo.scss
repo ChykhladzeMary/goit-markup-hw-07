@@ -38,16 +38,16 @@
 
     &__name {
     color: $secondary-color;
-    font-size: 16px;
-    line-height: 1,88;
+    font-size: $font-size-16;
+    line-height: $line-height-188;
     letter-spacing: 0.03em;
 
 }
 }
 
 .text-content__project {
-    font-weight: 700;
-    font-size: 18px;
+    font-weight: $font-weight-700;
+    font-size: $font-size-18;
     font-weight: bold;
     line-height: 2;
     letter-spacing: 0.06em;
@@ -58,11 +58,11 @@
 .example-photo__description {
     display: block;
     position: absolute;
-    font-family: 'Roboto';
+    font-family: $font-family-primary;
     font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.56;
+    font-weight: $font-weight-400;
+    font-size: $font-size-18;
+    line-height: $line-height-156;
     letter-spacing: 0.03em;
     color: $title-color;
     background-color: rgba(33, 150, 243, 0.9);

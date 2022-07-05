@@ -1,7 +1,7 @@
 .team__speciality {
     color: $secondary-color;
-    font-size: 16px;
-    line-height: 1.19;
+    font-size: $font-size-16;
+    line-height: $line-height-119;
     letter-spacing: 0.03em;
     margin-bottom: 16px;
 }
@@ -20,9 +20,9 @@
 }
 
 .caption {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
+    font-weight: $font-weight-700;
+    font-size: $font-size-36;
+    line-height: $line-height-117;
     letter-spacing: 0.03em;
     margin-bottom: 50px;
 }
@@ -47,9 +47,9 @@
 
 
 .team__member {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.19;
+    font-weight: $font-weight-500;
+    font-size: $font-size-16;
+    line-height: $line-height-119;
     letter-spacing: 0.03em;
 }
 
