@@ -11,22 +11,14 @@
     text-decoration: none;
     font-style: normal;
     transition: color $animation;
-}
 
 
-
-.address__item:focus {
+&:focus,
+&:hover {
     color: $accent-color;
 }
-
-.address__item {
-    margin-bottom: 9px;
-
-&:hover,
-&:focus {
-        color: $accent-color;
-    }
 }
+
 
 .address__map {
     color: $title-color;
@@ -36,4 +28,12 @@
     text-decoration: none;
     font-style: normal;
 
+}
+
+.address__list {
+    margin-bottom: 9px;
+
+    &:last-child {
+        margin-bottom: 0px;
+    }
 }

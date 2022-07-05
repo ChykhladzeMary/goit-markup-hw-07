@@ -162,13 +162,15 @@
     border-radius: 4px;
     resize: none;
     transition: border-color $animation, outline $animation;
+}
+}
 
-&__field:focus {
+.textarea__field:focus {
     border-color: $accent-color;
     outline: none;
 }
-}
-}
+
+
 
 .textarea__field::placeholder {
     font-weight: 400;

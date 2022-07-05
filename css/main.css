@@ -1,4 +1,58 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap");
+/* roboto-regular - cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-v30-cyrillic-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/roboto-v30-cyrillic-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-v30-cyrillic-regular.woff2") format("woff2"), url("../fonts/roboto-v30-cyrillic-regular.woff") format("woff"), url("../fonts/roboto-v30-cyrillic-regular.ttf") format("truetype"), url("../fonts/roboto-v30-cyrillic-regular.svg#Roboto") format("svg");
+  /* Legacy iOS */
+}
+
+/* roboto-500 - cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/roboto-v30-cyrillic-500.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/roboto-v30-cyrillic-500.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-v30-cyrillic-500.woff2") format("woff2"), url("../fonts/roboto-v30-cyrillic-500.woff") format("woff"), url("../fonts/roboto-v30-cyrillic-500.ttf") format("truetype"), url("../fonts/roboto-v30-cyrillic-500.svg#Roboto") format("svg");
+  /* Legacy iOS */
+}
+
+/* roboto-700 - cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/roboto-v30-cyrillic-700.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/roboto-v30-cyrillic-700.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-v30-cyrillic-700.woff2") format("woff2"), url("../fonts/roboto-v30-cyrillic-700.woff") format("woff"), url("../fonts/roboto-v30-cyrillic-700.ttf") format("truetype"), url("../fonts/roboto-v30-cyrillic-700.svg#Roboto") format("svg");
+  /* Legacy iOS */
+}
+
+/* roboto-900 - cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/roboto-v30-cyrillic-900.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/roboto-v30-cyrillic-900.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-v30-cyrillic-900.woff2") format("woff2"), url("../fonts/roboto-v30-cyrillic-900.woff") format("woff"), url("../fonts/roboto-v30-cyrillic-900.ttf") format("truetype"), url("../fonts/roboto-v30-cyrillic-900.svg#Roboto") format("svg");
+  /* Legacy iOS */
+}
+
+/* raleway-regular - cyrillic */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/raleway-v27-cyrillic-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/raleway-v27-cyrillic-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/raleway-v27-cyrillic-regular.woff2") format("woff2"), url("../fonts/raleway-v27-cyrillic-regular.woff") format("woff"), url("../fonts/raleway-v27-cyrillic-regular.ttf") format("truetype"), url("../fonts/raleway-v27-cyrillic-regular.svg#Raleway") format("svg");
+  /* Legacy iOS */
+}
+
 html {
   box-sizing: border-box;
 }
@@ -406,7 +460,7 @@ template {
 }
 
 .logo {
-  font-family: Roboto, sans-serif;
+  font-family: Raleway, sans-serif;
   color: #212121;
   font-size: 26px;
   font-weight: 700;
@@ -440,8 +494,7 @@ template {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav__link:hover,
-.nav__link :focus {
+.nav__link:hover, .nav__link:focus {
   color: #2196F3;
 }
 
@@ -697,7 +750,7 @@ template {
 }
 
 .modal__title {
-  font-family: 'Roboto';
+  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -728,7 +781,7 @@ template {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.textarea__field__field:focus {
+.textarea__field:focus {
   border-color: #2196F3;
   outline: none;
 }
@@ -747,7 +800,7 @@ template {
 }
 
 .modal-policy__text {
-  font-family: 'Roboto';
+  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -758,14 +811,14 @@ template {
 
 .modal-policy__label {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
 .modal-policy {
   display: flex;
   justify-content: center;
-  text-align: center;
+  align-items: center;
   margin-bottom: 30px;
   padding: 0;
 }
@@ -786,8 +839,8 @@ template {
   width: 16px;
   height: 15px;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   border-radius: 2px;
   border: 2px solid #212121;
   margin-right: 8px;
@@ -817,7 +870,7 @@ template {
   background: #2196F3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  font-family: 'Roboto';
+  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -903,7 +956,7 @@ template {
   bottom: 0px;
   right: 0px;
   color: #FFFFFF;
-  font: Roboto;
+  font-family: Roboto, sans-serif;
   font-weight: 700;
   font-size: 14px;
   text-align: center;
@@ -1078,6 +1131,10 @@ template {
   color: #FFFFFF;
 }
 
+.address {
+  margin-top: 20px;
+}
+
 .container-footer-address {
   margin-right: 70px;
 }
@@ -1092,15 +1149,7 @@ template {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.address__item:focus {
-  color: #2196F3;
-}
-
-.address__item {
-  margin-bottom: 9px;
-}
-
-.address__item:hover, .address__item:focus {
+.address__item:focus, .address__item:hover {
   color: #2196F3;
 }
 
@@ -1111,6 +1160,14 @@ template {
   letter-spacing: 0.03em;
   text-decoration: none;
   font-style: normal;
+}
+
+.address__list {
+  margin-bottom: 9px;
+}
+
+.address__list:last-child {
+  margin-bottom: 0px;
 }
 
 .attention {
@@ -1165,7 +1222,7 @@ template {
   margin-right: 10px;
   position: relative;
   flex-direction: column;
-  font-family: 'Roboto';
+  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1216,7 +1273,7 @@ template {
   border-radius: 4px;
   border-style: none;
   color: #FFFFFF;
-  font-family: 'Roboto';
+  font-family: Roboto, sans-serif;
   padding: 10px 30px;
   font-weight: 700;
   font-size: 16px;
@@ -1310,7 +1367,7 @@ template {
 .text-content__name {
   color: #757575;
   font-size: 16px;
-  line-height: 1,88;
+  line-height: 1.88;
   letter-spacing: 0.03em;
 }
 
@@ -1326,7 +1383,7 @@ template {
 .example-photo__description {
   display: block;
   position: absolute;
-  font-family: 'Roboto';
+  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
